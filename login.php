@@ -40,6 +40,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
 	<title>Shut The Box</title>
 </head>
 <body>

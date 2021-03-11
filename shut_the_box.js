@@ -7,7 +7,7 @@ let checkboxes = document.querySelectorAll('input[type=checkbox]');
 
 window.onload = function(){
 	//disable submit button onload
-	submit_button.disabled = !submit_button.disabled;
+	$('#submit_button').attr('disabled', true);
 
 	//we want to assign eventlisteners to the number labels of the checkboxes onload,
 	//so that when we click on the numbers, the checkboxes will be checked/unchecked
@@ -128,5 +128,22 @@ function giveup(){
 	const boxes_sum = sum_checked_indices(checkboxes_state);
 	const remaining_boxes_sum = total_boxes_sum - boxes_sum;
 
-	alert(`Your score is ${remaining_boxes_sum}.`);
+	
+
+	const username = get_username();
+
+	//sent the AJAX request
+	const request = new XMLHttpRequest();
+	request.onload = function() {
+		if (this.status === 200) {
+			alert(`Your score is ${remaining_boxes_sum}.`);
+			window.location.href = 'scores.php';
+		}
+	}
+	request.open('POST', 'score.php');
+	request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+	request.send(`username=${username}&score=${remaining_boxes_sum}`);
+
+
+	
 }

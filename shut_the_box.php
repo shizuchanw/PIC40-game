@@ -22,8 +22,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>Shut The Box</title>
+	<link rel="stylesheet" href="style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
 	<script src="shut_the_box.js" defer></script>
+	<script src="username.js" defer></script>
 </head>
 
 <body>

@@ -17,23 +17,25 @@
 	<meta charset="utf-8">
 	<title>Shut The Box</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="username.js" defer></script>
-	<script src="welcome.js" defer></script>
+	<script src="scores.js" defer></script>
 </head>
 
 <body>
 	<header>
-		<h1>Welcome! Ready to play “Shut The Box”?</h1>
+		<h1>Shut The Box</h1>
 	</header>
 
 	<main>
 		<section>
-			<h2>Choose a username</h2>
-			<p>So that we can post your score(s), please choose a username.</p>
+			<h2>Scores</h2>
+			<p>Well done! Here are the scores so far...</p>
+			<p id="score-display"></p>
 			<fieldset>
-				<label for="textboxid">Username: </label>
-				<input type="text" id="textboxid">
-				<input type="button" value="submit" onclick="submit_name();">
+				<input type="button" value="PLAY AGAIN!!!" onclick="playAgain()">
+			</fieldset>
+			<fieldset>
+				<input type="button" value="Force update/start updating" onclick="forceUpdate();">
+				<input type="button" value="Stop updating" onclick="stopUpdate()">
 			</fieldset>
 		</section>
 	</main>
