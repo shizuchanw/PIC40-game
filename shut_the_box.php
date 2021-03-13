@@ -47,8 +47,8 @@
 
 		<section>
 			<h2>Dice roll</h2>
-			<fieldset>
-				<input type="button" id="roll_button" value="Roll dice" onclick="roll_dice();">
+			<fieldset id="roll">
+				<input type="button" id="roll_button" value="Roll dice" onclick="roll_dice();" class="button">
 				<span id="roll_result">Result: </span>
 			</fieldset>
 		</section>
@@ -57,7 +57,7 @@
 			<h2>Box selection</h2>
 			<table>
 				<thead>
-					<tr>
+					<tr id="boxes">
 						<?php
 							for ($i = 1; $i <=9 ; ++$i)
 							{
@@ -68,7 +68,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr id="checks">
 						<?php
 							for ($i = 1; $i <=9 ; ++$i)
 							{
@@ -80,8 +80,8 @@
 				</tbody>
 			</table>
 			<fieldset>
-				<input type="button" id="submit_button" value="Submit box selection" onclick="submit();">
-				<input type="button" id="give_up_button" value="I give up/I can't make a valid move" onclick="giveup();">
+				<input type="button" class="button" id="submit_button" value="Submit box selection" onclick="submit();">
+				<input type="button" class="button" id="give_up_button" value="I give up/I can't make a valid move" onclick="giveup();">
 			</fieldset>
 		</section>
 	</main>

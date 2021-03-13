@@ -31,11 +31,11 @@
 			<p>Well done! Here are the scores so far...</p>
 			<p id="score-display"></p>
 			<fieldset>
-				<input type="button" value="PLAY AGAIN!!!" onclick="playAgain()">
+				<input type="button" id="playagain-label" class="button" value="PLAY AGAIN!!!" onclick="playAgain()">
 			</fieldset>
 			<fieldset>
-				<input type="button" value="Force update/start updating" onclick="forceUpdate();">
-				<input type="button" value="Stop updating" onclick="stopUpdate()">
+				<input type="button" id="update-label" class="button" value="Force update/start updating" onclick="forceUpdate();">
+				<input type="button" class="button" value="Stop updating" onclick="stopUpdate()">
 			</fieldset>
 		</section>
 	</main>

@@ -31,9 +31,9 @@
 			<h2>Choose a username</h2>
 			<p>So that we can post your score(s), please choose a username.</p>
 			<fieldset>
-				<label for="textboxid">Username: </label>
+				<label for="textboxid" id="username-label">Username: </label>
 				<input type="text" id="textboxid">
-				<input type="button" value="submit" onclick="submit_name();">
+				<input type="button" class="button" value="submit" onclick="submit_name();">
 			</fieldset>
 		</section>
 	</main>

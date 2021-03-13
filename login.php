@@ -55,9 +55,9 @@
 
 			<fieldset>
 				<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-					<label for="password_id">Password:</label>
+					<label for="password_id" id="password-label">Password:</label>
 					<input type="password" name="password_submitted" id="password_id">
-					<input type="submit" value="Login">
+					<input type="submit" class="button" value="Login">
 				</form>
 			</fieldset>
 			<?php
