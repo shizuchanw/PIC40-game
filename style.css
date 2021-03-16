@@ -7,7 +7,7 @@ body
   text-align: left;
   margin-left: 50px;
   margin-right: 50px;
-  width: 80%
+  width: 80%;
 
   line-height: 1.6;
   scroll-behavior: smooth;
@@ -22,7 +22,7 @@ h1{
 
 h2{
   color: #eeeded;
-  font-weight: 530;
+  font-weight: 500;
 }
 
 p{
